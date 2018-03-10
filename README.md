@@ -4,12 +4,12 @@
 
 **The script will notify you when:**
 
-*The client connects to the team server
+- The client connects to the team server
 
-*A team member posts something in the event log
+- A team member posts something in the event log
 
-*Credentials come in from keylogging
+ -Credentials come in from keylogging
 
-*New incoming beacon
+ -New incoming beacon
 
-*New web hit
+- New web hit
