@@ -2,6 +2,8 @@
 
 ### Use the guide at https://api.slack.com/incoming-webhooks to setup slack and webhooks
 
+#### Credit:  @bluescreenofjeff
+
 **The script will notify you when:**
 
 - The client connects to the team server

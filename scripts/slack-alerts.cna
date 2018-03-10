@@ -1,4 +1,4 @@
-# Author @sec_groundzero. Based on the work of @ bluescreenofjeff
+# Author @sec_groundzero. Based on the work of @bluescreenofjeff
 
 $slack_channel = "#XXXXXX";
 $slack_emoji = ':skeleton:';
