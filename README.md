@@ -8,8 +8,8 @@
 
 - A team member posts something in the event log
 
- -Credentials come in from keylogging
+- Credentials come in from keylogging
 
- -New incoming beacon
+- New incoming beacon
 
 - New web hit
