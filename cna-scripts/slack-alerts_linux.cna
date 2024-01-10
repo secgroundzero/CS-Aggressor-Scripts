@@ -25,7 +25,6 @@ on ready {
 	exec(@curl_command);
 }
 
-
 # Web Hit Alert
 on web_hit {
 	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_web_hit.' New Web hit!\n\nFrom: '.$3.'\nRequest: '.$1.' '.$2.'\nResponse: '.$5.'\nUser-Agent: '.$4.'"}',$slack_webhookURL);
