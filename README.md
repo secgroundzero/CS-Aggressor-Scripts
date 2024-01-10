@@ -18,7 +18,7 @@ The scripts are compatible with both Windows and [Linux](/cna-scripts/slack-aler
 
 The official author of this project is [@sec_groundzero](https://twitter.com/sec_groundzero).
 
-Special thanks to [@nickvourd](https://twitter.com/nickvourd) for his contributions.
+Special thanks to my friend [@nickvourd](https://twitter.com/nickvourd) for his contributions.
 
 This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bluescreenofjeff)'s projects.
 
@@ -28,6 +28,7 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
   - [Acknowledgement](#acknowledgement)
   - [Table of Contents](#table-of-contents)
   - [Parsers](#parsers)
+    - [Linux Parser](#linux-parser)
   - [Setup Slack and Webhooks](#setup-slack-and-webhooks)
 
 ## Parsers
@@ -40,6 +41,22 @@ In the following table, the parsers of this project are presented:
 |:-----------:|:-----------:|:-----------:|:-----------:|
 |[slack-cna-parser_linux.sh](/Parsers/slack-cna-parser_linux.sh)| Bash | Linux | CNA Parser for Linux systems. |
 |slack-cna-parser_windows.ps1| PowerShell | Windows | CNA Parser for Windows systems. |
+
+### Linux Parser
+
+The [Linux parser](/Parsers/slack-cna-parser_linux.sh) uses three mandatory arguments:
+
+- hostname
+- channel
+- webhook
+
+To run the linux parser, you should use the following usage:
+
+```
+./slack-cna-parser_linux.sh --channel "#XXXX" --hostname "XXXX" --webhook "https://hooks.slack.com/services/XXXX"
+```
+
+Example:
 
 ## Setup Slack and Webhooks
 
