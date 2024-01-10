@@ -58,6 +58,8 @@ To run the linux parser, you should use the following usage:
 
 Example:
 
+![linux-parser-example](/Pictures/linux-parser-example.png)
+
 ## Setup Slack and Webhooks
 
 To setup slack server and webhook, you can follow these [guides] or visit the [Slack Website](https://api.slack.com/incoming-webhooks).
