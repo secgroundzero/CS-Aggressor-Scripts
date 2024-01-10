@@ -7,7 +7,6 @@ $slack_webhookURL = 'https://hooks.slack.com/services/XXXXXXXXXXX/XXXXXXXXXXXXXx
 $teamserver_hostname = 'XXXXXX';;
 $slack_emoji_beacon = ':skull:';
 $slack_emoji_connect = ':warning:';
-$slack_emoji_disconnect = ':door:';
 $slack_emoji_web_hit = ':bell:';
 
 # New Beacon Alert
@@ -22,30 +21,13 @@ on beacon_initial {
 	
 # CS Client Connected Alert
 on ready {
-	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_connect.' Someone has connected to '.$teamserver_hostname.'"}',$slack_webhookURL);
+	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_connect.' Someone has connected to '.$teamserver_hostname.'!"}',$slack_webhookURL);
 	exec(@curl_command);
 }
 
-# CS Client Disconnected Alert
-on disconnect {
-	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_disconnect.' CS Client Disconnected"}',$slack_webhookURL);
-	exec(@curl_command);
-}
 
 # Web Hit Alert
 on web_hit {
-	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_web_hit.' New Web hit\n\nFrom: '.$3.'\nRequest: '.$1.' '.$2.'\nResponse: '.$5.'\nUser-Agent: '.$4.'"}',$slack_webhookURL);
-	exec(@curl_command);
-}
-
-# New Event Alert
-on event_public {
-	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "channel": "' . $slack_channel . '", "text": New Event Alert" ' . $1 . ' posted: ' . $2 .'"}',$slack_webhookURL);
-	exec(@curl_command);
-}
-
-# keylogger Alert
-on keylogger_hit {
-	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "channel": "' . $slack_channel . '", "text":"Keylog creds from ' . $2 . '"}',$slack_webhookURL);
+	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_web_hit.' New Web hit!\n\nFrom: '.$3.'\nRequest: '.$1.' '.$2.'\nResponse: '.$5.'\nUser-Agent: '.$4.'"}',$slack_webhookURL);
 	exec(@curl_command);
 }
