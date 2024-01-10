@@ -48,8 +48,8 @@ validate_channel_format() {
 
 # Function to replace placeholders in the cna file
 replace_values_in_cna_file() {
-  local cna_file="cna-scripts/slack-alerts_linux.cna"
-  absolute_path="$(cd "$(dirname "$cna_file")" && pwd)/$(basename "$cna_file")"
+  local cna_file="slack-alerts_linux.cna"
+  absolute_path=$(find / -type f -name "slack-alerts_linux.cna" 2>/dev/null)
   local channel=$1
   local webhook=$2
   local hostname=$3
