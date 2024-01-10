@@ -4,7 +4,7 @@ Aggressor script for easier team collaboration with Cobalt Strike.
 
 ## Description
 
-These scripts will notify you when:
+These scripts will notify you via Slack application when:
 
 - The client connects to the team server
 - A team member posts something in the event log
