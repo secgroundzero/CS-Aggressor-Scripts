@@ -35,10 +35,10 @@ In this project, there are two parsers that automate the editing of CNA file acc
 
 In the following table, the parsers of this project are presented:
 
-| Name | Language | System | Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-|[slack-cna-parser_linux.sh](/Parsers/slack-cna-parser_linux.sh)| Bash | Linux | CNA Parser for Linux systems. |
-|slack-cna-parser_windows.ps1| PowerShell | Windows | CNA Parser for Windows systems. |
+| Name | Language | OS | App | Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:
+|[slack-cna-parser_linux.sh](/Parsers/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems. |
+|[slack-cna-parser_windows.ps1](/Parsers/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems. |
 
 ### Linux Parser
 
