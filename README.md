@@ -37,8 +37,8 @@ In the following table, the parsers of this project are presented:
 
 | Name | Language | OS | App | Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|:-----------:
-|[slack-cna-parser_linux.sh](/Parsers/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems. |
-|[slack-cna-parser_windows.ps1](/Parsers/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems. |
+|[slack-cna-parser_linux.sh](/Parsers/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems |
+|[slack-cna-parser_windows.ps1](/Parsers/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems |
 
 ### Linux Parser
 
