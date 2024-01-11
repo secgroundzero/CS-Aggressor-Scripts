@@ -26,7 +26,7 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
   - [Acknowledgement](#acknowledgement)
   - [Table of Contents](#table-of-contents)
   - [Parsers](#parsers)
-    - [Linux Parser](#linux-parser)
+    - [Slack Linux Parser](#slcak-linux-parser)
   - [Setup Slack and Webhooks](#setup-slack-and-webhooks)
 
 ## Parsers
@@ -40,9 +40,9 @@ In the following table, the parsers of this project are presented:
 |[slack-cna-parser_linux.sh](/Parsers/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems |
 |[slack-cna-parser_windows.ps1](/Parsers/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems |
 
-### Linux Parser
+### Slack Linux Parser
 
-The [Linux parser](/Parsers/slack-cna-parser_linux.sh) uses three mandatory arguments:
+The [Slack Linux parser](/Parsers/slack-cna-parser_linux.sh) uses three mandatory arguments:
 
 - hostname
 - channel
