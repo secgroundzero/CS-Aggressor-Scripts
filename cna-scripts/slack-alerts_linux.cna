@@ -27,10 +27,10 @@ on beacon_initial {
 }
 	
 # CS Client Connected Alert
-on ready {
+on event_join {
 	$active_users = "";
     	
-  # csusersinfo function
+    # csusersinfo function
 	sub csusersinfo {
 		foreach %csuser (users()) {
         		$active_users .= "- " . %csuser . "\n";
@@ -38,9 +38,9 @@ on ready {
 	}
 	
 	# Call function named csusersinfo
-	csusersinfo();
-
-    	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"' . $slack_emoji_connect . ' Someone has connected to ' . $teamserver_hostname . '!\n\n' . $slack_emoji_info . ' Active CS users:\n\n' . $active_users . '"}', $slack_webhookURL);
+	csusersinfo();	
+	
+	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_connect.' '.$1.' has connected to ' . $teamserver_hostname . '!\n\n' . $slack_emoji_info . ' Active CS users:\n\n' . $active_users . '"}', $slack_webhookURL);
     	exec(@curl_command);
 }
 
