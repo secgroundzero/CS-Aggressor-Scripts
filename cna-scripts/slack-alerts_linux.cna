@@ -10,6 +10,7 @@ $slack_emoji_connect = ':warning:';
 $slack_emoji_web_hit = ':bell:';
 $slack_emoji_info = ':information_source:';
 $slack_emoji_message = ':memo:';
+$slack_emoji_worker = ":construction_worker:";
 $active_users = "";
     	
 # csusersinfo function
@@ -63,6 +64,12 @@ on event_quit {
 on event_public {
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_message.' New public message from: '.$1.'\n\n'.$slack_emoji_info.' Message content:\n\n '.$2.'"}', $slack_webhookURL);
     exec(@curl_command);
+}
+
+# New Site Event Log Alert
+on event_newsite {
+	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_worker.' '.$1.' set up a new site on '.$teamserver_hostname.'\n\n'.$slack_emoji_info.' New site details:\n\n'.$2.'"}', $slack_webhookURL);
+    	exec(@curl_command);
 }
 
 # Web Hit Alert
