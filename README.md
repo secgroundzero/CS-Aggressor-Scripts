@@ -12,6 +12,7 @@ These scripts will notify you via Slack application when:
 - New web hit
 - A CS client posts something in the event log
 - New site hosts
+- New credentials come in from keylogging
 
 The scripts are compatible with both Windows and [Linux](/cna-scripts/slack-alerts_linux.cna) operating systems.
 
