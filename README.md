@@ -4,15 +4,15 @@ Aggressor script for easier team collaboration with Cobalt Strike.
 
 ## Description
 
-These scripts will notify you via Slack application when:
+These scripts will notify you via the Slack application when:
 
-- New client connects to the team server
-- A CS client disconnects from the team server
-- New incoming beacon
-- New web hit
-- A CS client posts something in the event log
-- New site hosts
-- New credentials come in from keylogging
+- A new client connects to the team server.
+- A CS client disconnects from the team server.
+- A new incoming beacon.
+- A new web hit occurs.
+- A CS client posts something in the event log.
+- New site hosts.
+- New credentials come in from keylogging.
 
 The scripts are compatible with both Windows and [Linux](/cna-scripts/slack-alerts_linux.cna) operating systems.
 
