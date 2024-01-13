@@ -31,7 +31,8 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
   - [Acknowledgement](#acknowledgement)
   - [Table of Contents](#table-of-contents)
   - [Parsers](#parsers)
-    - [Slack Linux Parser](#slcak-linux-parser)
+    - [Linux Parser for Slack](#linux-parser-for-slack)
+    - [Windows Parser for Slack](#windows-parser-for-slack)
   - [Setup Slack and Webhooks](#setup-slack-and-webhooks)
   - [References](#references)
 
@@ -46,9 +47,9 @@ In the following table, the parsers of this project are presented:
 |[slack-cna-parser_linux.sh](/Parsers/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems |
 |[slack-cna-parser_windows.ps1](/Parsers/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems |
 
-### Slack Linux Parser
+### Linux Parser for Slack
 
-The [Slack Linux parser](/Parsers/slack-cna-parser_linux.sh) uses three mandatory arguments:
+The [Linux parser for Slack](/Parsers/slack-cna-parser_linux.sh) uses three mandatory arguments:
 
 - hostname
 - channel
@@ -63,6 +64,24 @@ To run the linux parser, you should use the following usage:
 Example:
 
 ![linux-parser-example](/Pictures/linux-parser-example.png)
+
+### Windows Parser for Slack
+
+The [Windows parser for Slack](/Parsers/slack-cna-parser_windows.ps1) uses three mandatory arguments:
+
+- hostname
+- channel
+- webhook
+
+To run the windows parser, you should use the following usage:
+
+```
+.\slack-cna-parser_windows.ps1  -hostname "XXXX" -channel "#XXXX" -webhook "https://hooks.slack.com/services/XXXX"
+```
+
+Example:
+
+![windows-parser-example](/Pictures/linux-parser-example.png)
 
 ## Setup Slack and Webhooks
 
