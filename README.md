@@ -81,7 +81,7 @@ To run the windows parser, you should use the following usage:
 
 Example:
 
-![windows-parser-example](/Pictures/linux-parser-example.png)
+![windows-parser-example](/Pictures/windows-parser-example.png)
 
 ## Setup Slack and Webhooks
 
