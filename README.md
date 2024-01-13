@@ -32,6 +32,7 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
   - [Parsers](#parsers)
     - [Slack Linux Parser](#slcak-linux-parser)
   - [Setup Slack and Webhooks](#setup-slack-and-webhooks)
+  - [References](#references)
 
 ## Parsers
 
@@ -65,3 +66,5 @@ Example:
 ## Setup Slack and Webhooks
 
 To setup slack server and webhook, you can follow these [guides] or visit the [Slack Website](https://api.slack.com/incoming-webhooks).
+
+## References
