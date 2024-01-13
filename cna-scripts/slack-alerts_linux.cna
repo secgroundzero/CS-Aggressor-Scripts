@@ -9,6 +9,7 @@ $slack_emoji_beacon = ':skull:';
 $slack_emoji_connect = ':warning:';
 $slack_emoji_web_hit = ':bell:';
 $slack_emoji_info = ':information_source:';
+$slack_emoji_message = ':memo:';
 $active_users = "";
     	
 # csusersinfo function
@@ -47,7 +48,7 @@ on event_join {
 }
 
 # CS Client Disconnected Alert
-on event_quit{
+on event_quit {
 	# Call function named csusersinfo
 	csusersinfo();
 
@@ -56,6 +57,12 @@ on event_quit{
     	
     # Clean the variable
 	$active_users = "";
+}
+
+# CS Client Public Message Event Alert
+on event_public {
+	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_message.' New public message from: '.$1.'\n\n'.$slack_emoji_info.' Message content:\n\n '.$2.'"}', $slack_webhookURL);
+    exec(@curl_command);
 }
 
 # Web Hit Alert

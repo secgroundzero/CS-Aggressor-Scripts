@@ -10,6 +10,7 @@ These scripts will notify you via Slack application when:
 - A CS client disconnects from the team server
 - New incoming beacon
 - New web hit
+- A CS client posts something in the event log
 
 The scripts are compatible with both Windows and [Linux](/cna-scripts/slack-alerts_linux.cna) operating systems.
 
