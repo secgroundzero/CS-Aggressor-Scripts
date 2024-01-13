@@ -30,7 +30,7 @@ on beacon_initial {
 on ready {
 	$active_users = "";
     	
-    	# csusersinfo function
+  # csusersinfo function
 	sub csusersinfo {
 		foreach %csuser (users()) {
         		$active_users .= "- " . %csuser . "\n";
