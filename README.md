@@ -7,6 +7,7 @@ Aggressor script for easier team collaboration with Cobalt Strike.
 These scripts will notify you via Slack application when:
 
 - New client connects to the team server
+- A CS client disconnects from the team server.
 - New incoming beacon
 - New web hit
 

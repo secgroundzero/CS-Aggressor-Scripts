@@ -9,6 +9,14 @@ $slack_emoji_beacon = ':skull:';
 $slack_emoji_connect = ':warning:';
 $slack_emoji_web_hit = ':bell:';
 $slack_emoji_info = ':information_source:';
+$active_users = "";
+    	
+# csusersinfo function
+sub csusersinfo {
+	foreach %csuser (users()) {
+        $active_users .= "- " . %csuser . "\n";
+    }
+}	
 
 # New Beacon Alert
 on beacon_initial {
@@ -28,20 +36,26 @@ on beacon_initial {
 	
 # CS Client Connected Alert
 on event_join {
-	$active_users = "";
-    	
-    # csusersinfo function
-	sub csusersinfo {
-		foreach %csuser (users()) {
-        		$active_users .= "- " . %csuser . "\n";
-        	}
-	}
-	
 	# Call function named csusersinfo
 	csusersinfo();	
 	
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_connect.' '.$1.' has connected to ' . $teamserver_hostname . '!\n\n' . $slack_emoji_info . ' Active CS users:\n\n' . $active_users . '"}', $slack_webhookURL);
-    	exec(@curl_command);
+    exec(@curl_command);
+
+	# Clean the variable
+	$active_users = "";
+}
+
+# CS Client Disconnected Alert
+on event_quit{
+	# Call function named csusersinfo
+	csusersinfo();
+
+	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_connect.' '.$1.' has disconnected to ' . $teamserver_hostname . '!\n\n' . $slack_emoji_info . ' Active CS users:\n\n' . $active_users . '"}', $slack_webhookURL);
+    exec(@curl_command);
+    	
+    # Clean the variable
+	$active_users = "";
 }
 
 # Web Hit Alert
