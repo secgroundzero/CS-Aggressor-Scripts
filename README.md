@@ -34,7 +34,7 @@ The official author of this project is [@sec_groundzero](https://twitter.com/sec
 
 Special thanks to my friend [@nickvourd](https://twitter.com/nickvourd) for his contributions.
 
-This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bluescreenofjeff)'s projects.
+These aggressor scripts were inspired by [@bluescreenofjeff](https://twitter.com/bluescreenofjeff)'s projects.
 
 ## Table of Contents
 - [CS-Aggressor-Scripts](#cs-aggressor-scripts)
