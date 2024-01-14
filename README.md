@@ -127,6 +127,8 @@ To run the linux parser, you should use the following usage:
 
 Example:
 
+![Discord-Linux-Parser](/Pictures/Discord-Linux-Parser.png)
+
 ## Example CNA Output
 
 #### New incoming Beacon notification example (Slack):
