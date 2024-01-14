@@ -4,7 +4,9 @@ Aggressor script for easier team collaboration with Cobalt Strike.
 
 ## Description
 
-These scripts will notify you via the Slack application when:
+:information_source: This project contains CNA files for Cobalt Strike, parsers for automated editing of the CNA files, and guides to set up webhooks on the Slack application.
+
+These CNA files will notify you via the Slack application when:
 
 - A new client connects to the team server.
 - A CS client disconnects from the team server.
@@ -48,7 +50,7 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
 
 ### Setup Slack and Webhooks
 
-To set up a Slack server and webhook, you can follow these guides on the [Slack website](https://api.slack.com/incoming-webhooks).
+ :information_source: To set up a Slack server and webhook, you can follow these guides on the [Slack website](https://api.slack.com/incoming-webhooks).
 
 ## Parsers
 
