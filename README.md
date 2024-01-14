@@ -44,6 +44,7 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
   - [Parsers](#parsers)
     - [Linux Parser for Slack](#linux-parser-for-slack)
     - [Windows Parser for Slack](#windows-parser-for-slack)
+  - [Example CNA Output](#example-cna-output)
   - [References](#references)
 
 ## Webhooks
@@ -100,6 +101,20 @@ To run the windows parser, you should use the following usage:
 Example:
 
 ![windows-parser-example](/Pictures/windows-parser-example.png)
+
+## Example CNA Output
+
+- New incoming Beacon notification example:
+
+![New-Beacon-Example](/Pictures/New-Beacon-Example.PNG)
+
+- New Web hit notification example:
+
+![Web-Hit-Example](/Pictures/Web-Hit-Example.PNG)
+
+- New CS client connects to the teamserver notification example:
+
+![New-CS-Client-Connect-Example](/Pictures/New-CS-Client-Connect-Example.PNG)
 
 ## References
 
