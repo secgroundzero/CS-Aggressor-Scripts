@@ -122,7 +122,7 @@ The [Linux parser for Discord](/Parsers/Discord/discord-cna-parser_linux.sh) use
 To run the linux parser, you should use the following usage:
 
 ```
-./discord-cna-parser_linux.sh --hostname "XXXX" --webhook "https://discord.com/api/webhooks/XXXXX"
+.\discord-cna-parser_linux.sh --hostname "XXXX" --webhook "https://discord.com/api/webhooks/XXXXX"
 ```
 
 ## Example CNA Output
