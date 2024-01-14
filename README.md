@@ -149,6 +149,10 @@ Example:
 
 ![Host-File-Clone-Site](/Pictures/Host-File-Clone-Site.png)
 
+#### CS client posts something in the event log (Discord):
+
+![New-message-CS](/Pictures/New-message-CS.png)
+
 ## References
 
 - [Aggressor Script Guide by Forta](https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/agressor_script.htm)
