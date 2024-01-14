@@ -41,11 +41,11 @@ on beacon_initial {
 # New CS Client Connected Alert
 on event_join {
 	# Call function named csusersinfo
-	csusersinfo();	
+	csusersinfo();
 	
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_connect.' '.$1.' has connected to ' . $teamserver_hostname . '!\n\n' . $slack_emoji_info . ' Active CS users:\n\n' . $active_users . '"}', $slack_webhookURL);
 	exec(@curl_command);
-
+	
 	# Clean the variable
 	$active_users = "";
 }
