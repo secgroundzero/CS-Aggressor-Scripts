@@ -44,7 +44,7 @@ on event_join {
 	csusersinfo();	
 	
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_connect.' '.$1.' has connected to ' . $teamserver_hostname . '!\n\n' . $slack_emoji_info . ' Active CS users:\n\n' . $active_users . '"}', $slack_webhookURL);
-    exec(@curl_command);
+    	exec(@curl_command);
 
 	# Clean the variable
 	$active_users = "";
@@ -56,22 +56,22 @@ on event_quit {
 	csusersinfo();
 
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_connect.' '.$1.' has disconnected from ' . $teamserver_hostname . '!\n\n' . $slack_emoji_info . ' Active CS users:\n\n' . $active_users . '"}', $slack_webhookURL);
-    exec(@curl_command);
+    	exec(@curl_command);
     	
-    # Clean the variable
+    	# Clean the variable
 	$active_users = "";
 }
 
 # CS Client Public Message Event Alert
 on event_public {
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_message.' New public message from: '.$1.'\n\n'.$slack_emoji_info.' Message content:\n\n '.$2.'"}', $slack_webhookURL);
-    exec(@curl_command);
+    	exec(@curl_command);
 }
 
 # New Site Event Log Alert
 on event_newsite {
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_site.' '.$1.' set up a new site on '.$teamserver_hostname.'\n\n'.$slack_emoji_info.' New site details:\n\n'.$2.'"}', $slack_webhookURL);
-    exec(@curl_command);
+    	exec(@curl_command);
 }
 
 # New Keystrokes Alert
@@ -80,7 +80,7 @@ on keystrokes {
 	$keytitle = $1['title'];
 
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_keystrokes.' Received new Keystrokes from '.$keytitle.' by '.$keyuser.'!"}', $slack_webhookURL);
-    exec(@curl_command);
+    	exec(@curl_command);
 }
 
 # New Web Hit Alert
@@ -95,5 +95,5 @@ on screenshots {
 	$screentitle = $1['title'];
 
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_screenshot.' Received new screenshot of '.$screentitle.' by '.$screenuser.'!"}', $slack_webhookURL);
-    exec(@curl_command);
+    	exec(@curl_command);
 }
