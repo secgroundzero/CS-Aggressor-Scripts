@@ -129,15 +129,15 @@ To run the linux parser, you should use the following usage:
 
 - New incoming Beacon notification example (Slack):
 
-![New-Beacon-Example](/Pictures/New-Beacon-Example.png)
+![New-Beacon-Example](/Pictures/New-Beacon-Example1.png)
 
 - New Web hit notification example (Discord):
 
-![Web-Hit-Example](/Pictures/Web-Hit-Example.png)
+![Web-Hit-Example](/Pictures/Web-Hit-Example1.png)
 
 - New CS client connects to the teamserver notification example (Slack):
 
-![New-CS-Client-Connect-Example](/Pictures/New-CS-Client-Connect-Example.png)
+![New-CS-Client-Connect-Example](/Pictures/New-CS-Client-Connect-Example1.png)
 
 ## References
 
