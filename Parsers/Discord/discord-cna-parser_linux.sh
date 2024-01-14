@@ -19,9 +19,9 @@ EOF
 display_help() {
   echo -e "\nUsage: ./discord-cna-parser_linux.sh --hostname <hostname> --webhook <url>\n"
   echo "Options:"
-  echo "  -h, --help                Display this help message"
+  echo "  -h, --help    Display this help message"
   echo "  --hostname <hostname>     Set hostname"
-  echo "  --webhook <url>           Set webhook url"
+  echo "  --webhook <url>   Set webhook url"
 }
 
 # Check if no arguments are provided
