@@ -4,9 +4,9 @@ Aggressor script for easier team collaboration with Cobalt Strike.
 
 ## Description
 
-:information_source: This project contains CNA files for Cobalt Strike, parsers for automated editing of the CNA files, and guides to set up webhooks on the Slack application.
+:information_source: This project contains CNA files for Cobalt Strike, parsers for automated editing of the CNA files, and guides to set up webhooks on the Slack or Discord application.
 
-These CNA files will notify you via the Slack application when:
+These CNA files will notify you via the Slack/Discord application when:
 
 - A new client connects to the team server.
 - A CS client disconnects from the team server.
@@ -25,6 +25,8 @@ The following table illustrates the CNA files included in this project:
 |:-----------:|:-----------:|:-----------:|:-----------:|
 |[slack-alerts_linux.cna](/cna-scripts/Slack/slack-alerts_linux.cna)| Linux | Slack | Slack CNA file for Linux CS client |
 |[slack-alerts_windows.cna](/cna-scripts/Slack/slack-alerts_windows.cna)| Windows | Slack | Slack CNA file for Windows CS client |
+|[discord-alerts_linux.cna](/cna-scripts/Discord/discord-alerts_linux.cna)| Linux | Discord | Discord CNA file for Linux CS Client |
+|[discord-alerts_windows.cna](/cna-scripts/Discord/discord-alerts_windows.cna)| Windows | Discord | Discord CNA file for Windows CS Client |
 
 ## Acknowledgement
 
@@ -55,7 +57,7 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
 
 ## Parsers
 
-In this project, there are two parsers that automate the editing of CNA file according to your personal preferences.
+In this project, there are four parsers that automate the editing of CNA file according to your personal preferences.
 
 :information_source: However, you can manually edit the CNA files without using the parsers.
 
@@ -65,6 +67,8 @@ In the following table, the parsers of this project are presented:
 |:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
 |[slack-cna-parser_linux.sh](/Parsers/Slack/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems |
 |[slack-cna-parser_windows.ps1](/Parsers/Slack/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems |
+|[discord-cna-parser_linux.sh](/Parsers/Discord/discord-cna-parser_linux.sh)| Bash | Linux | Discord | Discord CNA Parser for Linux systems |
+|[discord-cna-parser_windows.ps1](/Parsers/Discord/discord-cna-parser_windows.ps1)| PowerShell | Windows | Discord | Discord CNA Parser for Windows systems |
 
 ### Linux Parser for Slack
 
