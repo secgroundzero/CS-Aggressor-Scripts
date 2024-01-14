@@ -114,7 +114,7 @@ Example:
 
 ### Linux Parser for Discord
 
-The [Linux parser for Discord](/Parsers/Discord/discord-cna-parser_linux.sh) uses three mandatory arguments:
+The [Linux parser for Discord](/Parsers/Discord/discord-cna-parser_linux.sh) uses two mandatory arguments:
 
 - hostname
 - webhook
