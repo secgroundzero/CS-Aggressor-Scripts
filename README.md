@@ -129,6 +129,7 @@ Example:
 
 - [Aggressor Script Guide by Forta](https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/agressor_script.htm)
 - [Slack Official Site](https://slack.com)
+- [Discord Official Site](https://discord.com)
 - [Sleep Language 2.1 Tutorial](http://sleep.dashnine.org/manual/)
 - [Cobalt Strike Official Site](https://www.cobaltstrike.com)
 - [AggressorScripts GitHub by bluscreenofjeff](https://github.com/bluscreenofjeff/AggressorScripts)
