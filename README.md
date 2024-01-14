@@ -153,6 +153,14 @@ Example:
 
 ![New-message-CS](/Pictures/New-message-CS.png)
 
+#### New credentials come in from keylogging (Discord):
+
+![New-credentials-come-in](/Pictures/Keystrokes-Received.png)
+
+#### New screenshot is taken from Cobalt Strike (Slack):
+
+![New-Screesnhot-taken](/Pictures/New-Screesnhot-taken.png)
+
 ## References
 
 - [Aggressor Script Guide by Forta](https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/agressor_script.htm)
