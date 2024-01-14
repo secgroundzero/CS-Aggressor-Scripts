@@ -100,4 +100,4 @@ To setup slack server and webhook, you can follow these [guides] or visit the [S
 - [Slack Official Site](https://slack.com)
 - [Sleep Language 2.1 Tutorial](http://sleep.dashnine.org/manual/)
 - [Cobalt Strike Official Site](https://www.cobaltstrike.com)
-- [AggressorScripts by bluscreenofjeff](https://github.com/bluscreenofjeff/AggressorScripts)
+- [AggressorScripts GitHub by bluscreenofjeff](https://github.com/bluscreenofjeff/AggressorScripts)
