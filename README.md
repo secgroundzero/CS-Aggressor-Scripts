@@ -48,6 +48,7 @@ These aggressor scripts were inspired by [@bluescreenofjeff](https://twitter.com
     - [Linux Parser for Slack](#linux-parser-for-slack)
     - [Windows Parser for Slack](#windows-parser-for-slack)
     - [Linux Parser for Discord](#linux-parser-for-discord)
+    - [Windows Parser for Discord](#windows-parser-for-discord)
   - [Example CNA Output](#example-cna-output)
   - [References](#references)
 
@@ -128,6 +129,21 @@ To run the linux parser, you should use the following usage:
 Example:
 
 ![Discord-Linux-Parser](/Pictures/Discord-Linux-Parser.png)
+
+### Windows Parser for Discord
+
+The [Windows parser for Discord](/Parsers/Discord/discord-cna-parser_windows.ps1) uses two mandatory arguments:
+
+- hostname
+- webhook
+
+To run the windows parser, you should use the following usage:
+
+```
+.\discord-cna-parser_windows.ps1  -hostname "XXXX" -webhook "https://discord.com/api/webhooks/XXXXX"
+```
+
+Example:
 
 ## Example CNA Output
 
