@@ -24,7 +24,7 @@ sub csusersinfo {
 
 # New Beacon Alert
 on beacon_initial {
-	$user = beacon_data($1) ["user"];
+	$user = beacon_data($1)["user"];
 	$computer = beacon_data($1)["computer"];
 	$host = beacon_data($1)["host"];
 	$arch = beacon_data($1)["barch"];
