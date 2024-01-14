@@ -2,11 +2,13 @@
 # Spacial thanks to @sec_groundzero.
 # Based on the work of @bluescreenofjeff.
 
-$slack_emoji_beacon = ':skull:';
-$slack_emoji_connect = ':warning:';
-$slack_emoji_web_hit = ':bell:';
-$slack_emoji_info = ':information_source:';
-$slack_emoji_message = ':memo:';
-$slack_emoji_site = ':construction_worker:';
-$slack_emoji_keystrokes = ':bomb:';
-$slack_emoji_screenshot = ':eyes:';
+$discord_webhookURL = 'https://discord.com/api/webhooks/XXXX/XXXX'; # Change this with your webhook url
+$teamserver_hostname = 'XXXXXX'; # Change this with your hostname
+$discord_emoji_beacon = ':skull_crossbones:';
+$discord_emoji_connect = ':warning:';
+$discord_emoji_web_hit = ':bell:';
+$discord_emoji_info = ':information_source:';
+$discord_emoji_message = ':speech_balloon:';
+$discord_emoji_site = ':construction_worker:';
+$discord_emoji_keystrokes = ':key:';
+$discord_emoji_screenshot = ':eyes:';
