@@ -2,9 +2,9 @@
 # Co-author: @nickvourd.
 # Based on the work of @bluescreenofjeff.
 
-$slack_channel = "#XXXXXX";
-$slack_webhookURL = 'https://hooks.slack.com/services/XXXXXXXXXXX/XXXXXXXXXXXXXx';
-$teamserver_hostname = 'XXXXXX';
+$slack_channel = "#XXXXXX"; # Change this with your channel
+$slack_webhookURL = 'https://hooks.slack.com/services/XXXXXXXXXXX/XXXXXXXXXXXXXx'; # Change this with your webhook url
+$teamserver_hostname = 'XXXXXX'; # Change this with your hostname
 $slack_emoji_beacon = ':skull:';
 $slack_emoji_connect = ':warning:';
 $slack_emoji_web_hit = ':bell:';

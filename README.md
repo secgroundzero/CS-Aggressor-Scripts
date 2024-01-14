@@ -15,7 +15,14 @@ These scripts will notify you via the Slack application when:
 - New credentials come in from keylogging.
 - A new screenshot is taken from Cobalt Strike.
 
-The scripts are compatible with both Windows and [Linux](/cna-scripts/slack-alerts_linux.cna) operating systems.
+:information_source: The scripts are compatible with both the Windows and Linux operating systems.
+
+The following table illustrates the CNA files included in this project:
+
+| Name | OS | App | Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+|[slack-alerts_linux.cna](/cna-scripts/slack-alerts_linux.cna)| Linux | Slack | Slack CNA file for Linux CS Client |
+|[slack-alerts_windows.cna](/cna-scripts/slack-alerts_windows.cna)| Windows | Slack | Slack CNA file for Windows CS Client |
 
 ## Acknowledgement
 
@@ -43,13 +50,13 @@ In this project, there are two parsers that automate the editing of CNA file acc
 In the following table, the parsers of this project are presented:
 
 | Name | Language | OS | App | Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:
-|[slack-cna-parser_linux.sh](/Parsers/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems |
-|[slack-cna-parser_windows.ps1](/Parsers/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems |
+|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
+|[slack-cna-parser_linux.sh](/Parsers/Slack/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems |
+|[slack-cna-parser_windows.ps1](/Parsers/Slack/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems |
 
 ### Linux Parser for Slack
 
-The [Linux parser for Slack](/Parsers/slack-cna-parser_linux.sh) uses three mandatory arguments:
+The [Linux parser for Slack](/Parsers/Slack/slack-cna-parser_linux.sh) uses three mandatory arguments:
 
 - hostname
 - channel
@@ -67,7 +74,7 @@ Example:
 
 ### Windows Parser for Slack
 
-The [Windows parser for Slack](/Parsers/slack-cna-parser_windows.ps1) uses three mandatory arguments:
+The [Windows parser for Slack](/Parsers/Slack/slack-cna-parser_windows.ps1) uses three mandatory arguments:
 
 - hostname
 - channel
