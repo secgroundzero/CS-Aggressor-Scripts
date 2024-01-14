@@ -141,6 +141,14 @@ Example:
 
 ![New-CS-Client-Connect-Example](/Pictures/New-CS-Client-Connect-Example1.png)
 
+#### CS Client disconnects from the teamserver notification example (Discord):
+
+![CS-Client-Disconnect](/Pictures/CS-Client-Disconnect.png)
+
+#### CS Client hosts a file or clones a website notification example (Slack):
+
+![Host-File-Clone-Site](/Pictures/Host-File-Clone-Site.png)
+
 ## References
 
 - [Aggressor Script Guide by Forta](https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/agressor_script.htm)
