@@ -43,6 +43,7 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
   - [Table of Contents](#table-of-contents)
   - [Webhooks](#webhooks)
     - [Setup Slack and Webhooks](#setup-slack-and-webhooks)
+    - [Setup Discord and Webhooks](#setup-discord-and-webhooks)
   - [Parsers](#parsers)
     - [Linux Parser for Slack](#linux-parser-for-slack)
     - [Windows Parser for Slack](#windows-parser-for-slack)
@@ -54,6 +55,10 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
 ### Setup Slack and Webhooks
 
 :information_source: To set up a Slack server and webhook, you can follow these guides provided on the [Slack website](https://api.slack.com/incoming-webhooks).
+
+### Setup Discord and Webhooks
+
+:information_source: To set up a Discord server and webhook, you can follow these guides provided on the [Discord Website](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
 ## Parsers
 
