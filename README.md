@@ -125,6 +125,8 @@ To run the linux parser, you should use the following usage:
 .\discord-cna-parser_linux.sh --hostname "XXXX" --webhook "https://discord.com/api/webhooks/XXXXX"
 ```
 
+Example:
+
 ## Example CNA Output
 
 #### New incoming Beacon notification example (Slack):
