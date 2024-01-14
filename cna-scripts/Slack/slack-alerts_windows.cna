@@ -14,12 +14,12 @@ $slack_channel = "#XXXXXX"; # Change this with your channel
 $slack_webhookURL = "https://hooks.slack.com/services/XXXXXXXXXXX/XXXXXXXXXXXXXx"; # Change this with your webhook url
 $teamserver_hostname = "XXXXXX"; # Change this with your hostname
 $active_users = "";
-    	
+
 # csusersinfo function
 sub csusersinfo {
 	foreach %csuser (users()) {
-        $active_users .= "- " . %csuser . "\n";
-    }
+		$active_users .= "- " . %csuser . "\n";
+	}
 }
 
 # New Beacon Alert
