@@ -87,7 +87,7 @@ The [Linux parser for Slack](/Parsers/Slack/slack-cna-parser_linux.sh) uses thre
 To run the linux parser, you should use the following usage:
 
 ```
-./slack-cna-parser_linux.sh --channel "#XXXX" --hostname "XXXX" --webhook "https://hooks.slack.com/services/XXXX"
+.\slack-cna-parser_linux.sh --channel "#XXXX" --hostname "XXXX" --webhook "https://hooks.slack.com/services/XXXX"
 ```
 
 Example:
@@ -122,7 +122,7 @@ The [Linux parser for Discord](/Parsers/Discord/discord-cna-parser_linux.sh) use
 To run the linux parser, you should use the following usage:
 
 ```
-.\discord-cna-parser_linux.sh --hostname "XXXX" --webhook "https://discord.com/api/webhooks/XXXXX"
+./discord-cna-parser_linux.sh --hostname "XXXX" --webhook "https://discord.com/api/webhooks/XXXXX"
 ```
 
 Example:

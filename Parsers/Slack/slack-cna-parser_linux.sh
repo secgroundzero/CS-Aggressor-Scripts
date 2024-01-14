@@ -22,11 +22,11 @@ webhook=""
 
 # Function to display usage information
 display_help() {
-  echo -e "\nUsage: ./slack-cna-parser_linux.sh --hostname <hostname> --channel <channel> --webhook <url>\n"
+  echo -e "\nUsage: ./slack-cna-parser_linux.sh --hostname <hostname> --channel <#channel> --webhook <url>\n"
   echo "Options:"
   echo "  -h, --help  			      Display this help message"
   echo "  --hostname <hostname>	  Set hostname"
-  echo "  --channel <#channel>   	Set channel(Staring with #)"
+  echo "  --channel <#channel>   	Set channel (Staring with #)"
   echo "  --webhook <url> 		    Set webhook url"
 }
 
