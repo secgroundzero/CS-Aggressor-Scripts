@@ -56,6 +56,8 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
 
 In this project, there are two parsers that automate the editing of CNA file according to your personal preferences.
 
+:information_source: However, you can manually edit the CNA files without using the parsers.
+
 In the following table, the parsers of this project are presented:
 
 | Name | Language | OS | App | Description |
