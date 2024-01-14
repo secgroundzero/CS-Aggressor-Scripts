@@ -127,17 +127,17 @@ To run the linux parser, you should use the following usage:
 
 ## Example CNA Output
 
-- New incoming Beacon notification example:
+- New incoming Beacon notification example (Slack):
 
-![New-Beacon-Example](/Pictures/New-Beacon-Example.PNG)
+![New-Beacon-Example](/Pictures/New-Beacon-Example.png)
 
-- New Web hit notification example:
+- New Web hit notification example (Discord):
 
-![Web-Hit-Example](/Pictures/Web-Hit-Example.PNG)
+![Web-Hit-Example](/Pictures/Web-Hit-Example.png)
 
-- New CS client connects to the teamserver notification example:
+- New CS client connects to the teamserver notification example (Slack):
 
-![New-CS-Client-Connect-Example](/Pictures/New-CS-Client-Connect-Example.PNG)
+![New-CS-Client-Connect-Example](/Pictures/New-CS-Client-Connect-Example.png)
 
 ## References
 
