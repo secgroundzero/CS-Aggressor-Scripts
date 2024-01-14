@@ -24,7 +24,7 @@ The following table illustrates the CNA files included in this project:
 | Name | OS | App | Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
 |[slack-alerts_linux.cna](/cna-scripts/Slack/slack-alerts_linux.cna)| Linux | Slack | Slack CNA file for Linux CS client |
-|[slack-alerts_windows.cna](/cna-scripts/Slack/slack-alerts_linux.cna)| Windows | Slack | Slack CNA file for Windows CS client |
+|[slack-alerts_windows.cna](/cna-scripts/Slack/slack-alerts_windows.cna)| Windows | Slack | Slack CNA file for Windows CS client |
 
 ## Acknowledgement
 
