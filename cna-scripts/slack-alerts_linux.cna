@@ -70,7 +70,7 @@ on event_public {
 
 # New Site Event Log Alert
 on event_newsite {
-	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_site.' '.$1.' set up a new site on '.$teamserver_hostname.'\n\n'.$slack_emoji_info.' New site details:\n\n'.$2.'"}', $slack_webhookURL);
+	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_site.' '.$1.' set up a new site on '.$teamserver_hostname.'!\n\n'.$slack_emoji_info.' New site details:\n\n'.$2.'"}', $slack_webhookURL);
     	exec(@curl_command);
 }
 
