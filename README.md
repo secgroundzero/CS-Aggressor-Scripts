@@ -17,7 +17,7 @@ These CNA files will notify you via the `Slack`/`Discord` application when:
 - New credentials come in from keylogging.
 - A new screenshot is taken from Cobalt Strike.
 
-:information_source: The scripts are compatible with both the Windows and Linux operating systems.
+:information_source: The scripts are compatible with both the Windows and Linux Operating Systems.
 
 The following table illustrates the CNA files included in this project:
 
