@@ -44,7 +44,6 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
     - [Windows Parser for Slack](#windows-parser-for-slack)
   - [References](#references)
 
-
 ## Webhooks
 
 ### Setup Slack and Webhooks
