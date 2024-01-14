@@ -37,11 +37,19 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
   - [Description](#description)
   - [Acknowledgement](#acknowledgement)
   - [Table of Contents](#table-of-contents)
+  - [Webhooks](#webhooks)
+    - [Setup Slack and Webhooks](#setup-slack-and-webhooks)
   - [Parsers](#parsers)
     - [Linux Parser for Slack](#linux-parser-for-slack)
     - [Windows Parser for Slack](#windows-parser-for-slack)
-  - [Setup Slack and Webhooks](#setup-slack-and-webhooks)
   - [References](#references)
+
+
+## Webhooks
+
+### Setup Slack and Webhooks
+
+To set up a Slack server and webhook, you can follow these guides on the [Slack website](https://api.slack.com/incoming-webhooks).
 
 ## Parsers
 
@@ -89,10 +97,6 @@ To run the windows parser, you should use the following usage:
 Example:
 
 ![windows-parser-example](/Pictures/windows-parser-example.png)
-
-## Setup Slack and Webhooks
-
-To setup slack server and webhook, you can follow these [guides] or visit the [Slack Website](https://api.slack.com/incoming-webhooks).
 
 ## References
 
