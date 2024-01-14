@@ -50,7 +50,7 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
 
 ### Setup Slack and Webhooks
 
- :information_source: To set up a Slack server and webhook, you can follow these guides provided on the [Slack website](https://api.slack.com/incoming-webhooks).
+:information_source: To set up a Slack server and webhook, you can follow these guides provided on the [Slack website](https://api.slack.com/incoming-webhooks).
 
 ## Parsers
 
