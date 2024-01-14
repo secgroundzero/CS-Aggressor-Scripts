@@ -54,11 +54,11 @@ on event_join {
 on event_quit {
 	# Call function named csusersinfo
 	csusersinfo();
-
+	
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_connect.' '.$1.' has disconnected from ' . $teamserver_hostname . '!\n\n' . $slack_emoji_info . ' Active CS users:\n\n' . $active_users . '"}', $slack_webhookURL);
 	exec(@curl_command);
-    	
-    # Clean the variable
+	
+	# Clean the variable
 	$active_users = "";
 }
 
@@ -78,7 +78,7 @@ on event_newsite {
 on keystrokes {
 	$keyuser = $1['user'];
 	$keytitle = $1['title'];
-
+	
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_keystrokes.' Received new Keystrokes from '.$keytitle.' by '.$keyuser.'!"}', $slack_webhookURL);
 	exec(@curl_command);
 }
@@ -93,7 +93,7 @@ on web_hit {
 on screenshots {
 	$screenuser = $1['user'];
 	$screentitle = $1['title'];
-
+	
 	@curl_command = @('curl', '-X', 'POST', '--data-urlencode', 'payload={"username": "Cobalt Strike Slack Bot", "channel": "' . $slack_channel . '", "text":"'.$slack_emoji_screenshot.' Received new screenshot of '.$screentitle.' by '.$screenuser.'!"}', $slack_webhookURL);
 	exec(@curl_command);
 }
