@@ -6,7 +6,7 @@ Aggressor script for easier team collaboration with Cobalt Strike.
 
 :information_source: This project contains CNA files for Cobalt Strike, parsers for automated editing of the CNA files, and guides to set up webhooks on the Slack or Discord application.
 
-These CNA files will notify you via the Slack/Discord application when:
+These CNA files will notify you via the `Slack`/`Discord` application when:
 
 - A new client connects to the team server.
 - A CS client disconnects from the team server.
