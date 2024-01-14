@@ -58,7 +58,7 @@ This aggressor script was inspired by [@bluescreenofjeff](https://twitter.com/bl
 
 ### Setup Discord and Webhooks
 
-:information_source: To set up a Discord server and webhook, you can follow these guides provided on the [Discord Website](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+:information_source: To set up a Discord server and webhook, you can follow these guides provided on the [Discord website](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
 ## Parsers
 
