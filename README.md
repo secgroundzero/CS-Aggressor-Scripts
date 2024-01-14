@@ -106,7 +106,7 @@ The [Windows parser for Slack](/Parsers/Slack/slack-cna-parser_windows.ps1) uses
 To run the windows parser, you should use the following usage:
 
 ```
-.\slack-cna-parser_windows.ps1  -hostname "XXXX" -channel "#XXXX" -webhook "https://hooks.slack.com/services/XXXX"
+./slack-cna-parser_windows.ps1  -hostname "XXXX" -channel "#XXXX" -webhook "https://hooks.slack.com/services/XXXX"
 ```
 
 Example:
