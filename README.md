@@ -1,6 +1,6 @@
 # CS-Aggressor-Scripts
 
-Aggressor script for easier team collaboration with Cobalt Strike.
+Aggressor scripts for easier team collaboration with Cobalt Strike.
 
 ## Description
 
