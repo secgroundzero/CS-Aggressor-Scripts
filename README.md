@@ -26,7 +26,6 @@ The following table illustrates the CNA files included in this project:
 |[slack-alerts_linux.cna](/cna-scripts/Slack/slack-alerts_linux.cna)| Linux | Slack | Slack CNA file for Linux CS client |
 |[slack-alerts_windows.cna](/cna-scripts/Slack/slack-alerts_windows.cna)| Windows | Slack | Slack CNA file for Windows CS client |
 |[discord-alerts_linux.cna](/cna-scripts/Discord/discord-alerts_linux.cna)| Linux | Discord | Discord CNA file for Linux CS Client |
-|[discord-alerts_windows.cna](/cna-scripts/Discord/discord-alerts_windows.cna)| Windows | Discord | Discord CNA file for Windows CS Client |
 
 ## Acknowledgement
 
@@ -48,7 +47,6 @@ These aggressor scripts were inspired by [@bluescreenofjeff](https://twitter.com
     - [Linux Parser for Slack](#linux-parser-for-slack)
     - [Windows Parser for Slack](#windows-parser-for-slack)
     - [Linux Parser for Discord](#linux-parser-for-discord)
-    - [Windows Parser for Discord](#windows-parser-for-discord)
   - [Example CNA Output](#example-cna-output)
   - [References](#references)
 
@@ -75,7 +73,6 @@ In the following table, the parsers of this project are presented:
 |[slack-cna-parser_linux.sh](/Parsers/Slack/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems |
 |[slack-cna-parser_windows.ps1](/Parsers/Slack/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems |
 |[discord-cna-parser_linux.sh](/Parsers/Discord/discord-cna-parser_linux.sh)| Bash | Linux | Discord | Discord CNA Parser for Linux systems |
-|[discord-cna-parser_windows.ps1](/Parsers/Discord/discord-cna-parser_windows.ps1)| PowerShell | Windows | Discord | Discord CNA Parser for Windows systems |
 
 ### Linux Parser for Slack
 
@@ -129,23 +126,6 @@ To run the linux parser, you should use the following usage:
 Example:
 
 ![Discord-Linux-Parser](/Pictures/Discord-Linux-Parser.png)
-
-### Windows Parser for Discord
-
-The [Windows parser for Discord](/Parsers/Discord/discord-cna-parser_windows.ps1) uses two mandatory arguments:
-
-- hostname
-- webhook
-
-To run the windows parser, you should use the following usage:
-
-```
-.\discord-cna-parser_windows.ps1  -hostname "XXXX" -webhook "https://discord.com/api/webhooks/XXXXX"
-```
-
-Example:
-
-![Discord-Windows-Parser](/Pictures/Discord-Windows-Parser.png)
 
 ## Example CNA Output
 
