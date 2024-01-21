@@ -25,11 +25,11 @@ $webhook = ""
 # Function to display usage information
 function Show-Help {
     Write-Host ""
-    Write-Host "Usage: .\slack-cna-parser_windows.ps1 -hostname <hostname> -channel <channel> -webhook <url>`n"
+    Write-Host "Usage: .\slack-cna-parser_windows.ps1 -hostname <hostname> -channel <#channel> -webhook <url>`n"
     Write-Host "Options:`n"
     Write-Host "  -h, --help                Display this help message"
     Write-Host "  -hostname <hostname>      Set hostname"
-    Write-Host "  -channel <#channel>       Set channel(Staring with #)"
+    Write-Host "  -channel <#channel>       Set channel (Staring with #)"
     Write-Host "  -webhook <url>            Set webhook url`n"
 }
 
@@ -48,7 +48,6 @@ function ChannelValidation {
         return $false  # Channel does not start with '#'
     }
 }
-
 
 # Find-CnaFile function
 function Find-CnaFile {
