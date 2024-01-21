@@ -145,6 +145,8 @@ To run the windows parser, you should use the following usage:
 
 Example:
 
+![Discord-Windows-Parser](/Pictures/Discord-Windows-Parser.png)
+
 ## Example CNA Output
 
 #### New incoming Beacon notification example (Slack):
