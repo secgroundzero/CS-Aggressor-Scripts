@@ -6,7 +6,7 @@ Aggressor scripts for easier team collaboration with Cobalt Strike.
 
 :information_source: This project contains CNA files for Cobalt Strike, parsers for automated editing of the CNA files, and guides to set up webhooks on the Slack or Discord application.
 
-These CNA files will notify you via the `Slack`/`Discord` application when:
+These CNA files will notify you via the `Slack`/`Discord`/`Teams` applications when:
 
 - A new client connects to the team server.
 - A CS client disconnects from the team server.
@@ -43,6 +43,7 @@ These aggressor scripts were inspired by [@bluescreenofjeff](https://twitter.com
   - [Webhooks](#webhooks)
     - [Setup Slack and Webhooks](#setup-slack-and-webhooks)
     - [Setup Discord and Webhooks](#setup-discord-and-webhooks)
+    - [Setup Teams Webhooks](#setup-teams-webhooks)
   - [Parsers](#parsers)
     - [Linux Parser for Slack](#linux-parser-for-slack)
     - [Windows Parser for Slack](#windows-parser-for-slack)
@@ -59,6 +60,10 @@ These aggressor scripts were inspired by [@bluescreenofjeff](https://twitter.com
 ### Setup Discord and Webhooks
 
 :information_source: To set up a Discord server and webhook, you can follow these guides provided on the [Discord website](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
+
+### Setup Teams Webhooks
+
+:information_source: To set up a Microsoft Teams webhook, you can follow these guides provided on [Microsoft website](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=newteams%2Cdotnet).
 
 ## Parsers
 
