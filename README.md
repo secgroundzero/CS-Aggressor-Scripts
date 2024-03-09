@@ -17,7 +17,7 @@ These CNA files will notify you via the `Slack`/`Discord`/`Teams` applications w
 - New credentials come in from keylogging.
 - A new screenshot is taken from Cobalt Strike.
 
-:information_source: The scripts are compatible with both the Windows and Linux Operating Systems.
+:information_source: Some CNA files are compatible with both Windows and Linux operating systems.
 
 The following table illustrates the CNA files included in this project:
 
@@ -49,7 +49,7 @@ These aggressor scripts were inspired by [@bluescreenofjeff](https://twitter.com
     - [Linux Parser for Slack](#linux-parser-for-slack)
     - [Windows Parser for Slack](#windows-parser-for-slack)
     - [Linux Parser for Discord](#linux-parser-for-discord)
-    - [Linux Parser for Teams]()
+    - [Linux Parser for Teams](#linux-parser-for-teams)
   - [Example CNA Output](#example-cna-output)
   - [References](#references)
 
@@ -80,6 +80,7 @@ In the following table, the parsers of this project are presented:
 |[slack-cna-parser_linux.sh](/Parsers/Slack/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems |
 |[slack-cna-parser_windows.ps1](/Parsers/Slack/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems |
 |[discord-cna-parser_linux.sh](/Parsers/Discord/discord-cna-parser_linux.sh)| Bash | Linux | Discord | Discord CNA Parser for Linux systems |
+|[teams-cna-parser_linux.sh](/Parsers/Teams/teams-cna-parser_linux.sh| Bash | Linux | Teams | Teams CNA Parser for Linux systems |
 
 ### Linux Parser for Slack
 
@@ -136,12 +137,18 @@ Example:
 
 ### Linux Parser for Teams
 
-The Linux parser for Teams uses two mandatory arguments:
+The [Linux parser for Teams](/Parsers/Teams/teams-cna-parser_linux.sh) uses two mandatory arguments:
 
 - hostname
 - webhook
 
 To run the linux parser, you should use the following usage:
+
+```
+./teams-cna-parser_linux.sh -hostname "XXXX" --webhook "https://teams.com/api/webhooks/XXXXX"
+```
+
+Example:
 
 
 ## Example CNA Output

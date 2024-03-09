@@ -11,7 +11,7 @@ $slack_emoji_site = ':construction_worker:';
 $slack_emoji_keystrokes = ':bomb:';
 $slack_emoji_screenshot = ':eyes:';
 $slack_channel = "#XXXXXX"; # Change this with your channel
-$slack_webhookURL = "https://hooks.slack.com/services/XXXXXXXXXXX/XXXXXXXXXXXXXx"; # Change this with your webhook url
+$slack_webhookURL = "https://hooks.slack.com/services/XXXXXXXXXXX/XXXXXXXXXXXXXx"; # Change this with your Slack webhook url
 $teamserver_hostname = "XXXXXX"; # Change this with your hostname
 $active_users = "";
 

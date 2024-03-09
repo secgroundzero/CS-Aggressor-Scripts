@@ -2,7 +2,7 @@
 # Spacial thanks to @sec_groundzero.
 # Based on the work of @bluescreenofjeff.
 
-$teams_webhookURL = 'https://XXXXXXXXXXX/XXXXXXXXXXXXXx'; # Change this with your teams webhook url
+$teams_webhookURL = 'https://teams.com/api/webhooks/XXXX'; # Change this with your Teams webhook url
 $teamserver_hostname = 'XXXXXX'; # Change this with your hostname
 $active_users = "";
 

@@ -2,7 +2,7 @@
 # Spacial thanks to @sec_groundzero.
 # Based on the work of @bluescreenofjeff.
 
-$discord_webhookURL = 'https://discord.com/api/webhooks/XXXX'; # Change this with your webhook url
+$discord_webhookURL = 'https://discord.com/api/webhooks/XXXX'; # Change this with your Discord webhook url
 $teamserver_hostname = 'XXXXXX'; # Change this with your hostname
 $discord_emoji_beacon = ':skull_crossbones:';
 $discord_emoji_connect = ':warning:';
