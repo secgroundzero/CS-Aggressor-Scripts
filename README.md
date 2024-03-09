@@ -80,7 +80,7 @@ In the following table, the parsers of this project are presented:
 |[slack-cna-parser_linux.sh](/Parsers/Slack/slack-cna-parser_linux.sh)| Bash | Linux | Slack | Slack CNA Parser for Linux systems |
 |[slack-cna-parser_windows.ps1](/Parsers/Slack/slack-cna-parser_windows.ps1)| PowerShell | Windows | Slack | Slack CNA Parser for Windows systems |
 |[discord-cna-parser_linux.sh](/Parsers/Discord/discord-cna-parser_linux.sh)| Bash | Linux | Discord | Discord CNA Parser for Linux systems |
-|[teams-cna-parser_linux.sh](/Parsers/Teams/teams-cna-parser_linux.sh| Bash | Linux | Teams | Teams CNA Parser for Linux systems |
+|[teams-cna-parser_linux.sh](/Parsers/Teams/teams-cna-parser_linux.sh)| Bash | Linux | Teams | Teams CNA Parser for Linux systems |
 
 ### Linux Parser for Slack
 
