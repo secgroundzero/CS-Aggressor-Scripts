@@ -145,11 +145,12 @@ The [Linux parser for Teams](/Parsers/Teams/teams-cna-parser_linux.sh) uses two 
 To run the linux parser, you should use the following usage:
 
 ```
-./teams-cna-parser_linux.sh -hostname "XXXX" --webhook "https://teams.com/api/webhooks/XXXXX"
+./teams-cna-parser_linux.sh -hostname "XXXX" --webhook "https://XXXXXX/XXXXX"
 ```
 
 Example:
 
+![Teams-CNA-Linux-Parser-Example](/Pictures/Teams-CNA-Linux-Parser-Example.png)
 
 ## Example CNA Output
 
@@ -190,6 +191,7 @@ Example:
 - [Aggressor Script Guide by Forta](https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/agressor_script.htm)
 - [Slack Official Site](https://slack.com)
 - [Discord Official Site](https://discord.com)
+- [Teams Official Site](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software)
 - [Sleep Language 2.1 Tutorial](http://sleep.dashnine.org/manual/)
 - [Cobalt Strike Official Site](https://www.cobaltstrike.com)
 - [AggressorScripts GitHub by bluscreenofjeff](https://github.com/bluscreenofjeff/AggressorScripts)
