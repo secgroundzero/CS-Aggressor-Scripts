@@ -26,6 +26,7 @@ The following table illustrates the CNA files included in this project:
 |[slack-alerts_linux.cna](/cna-scripts/Slack/slack-alerts_linux.cna)| Linux | Slack | Slack CNA file for Linux CS client |
 |[slack-alerts_windows.cna](/cna-scripts/Slack/slack-alerts_windows.cna)| Windows | Slack | Slack CNA file for Windows CS client |
 |[discord-alerts_linux.cna](/cna-scripts/Discord/discord-alerts_linux.cna)| Linux | Discord | Discord CNA file for Linux CS Client |
+|[teams-alerts_linux.cna](/cna-scripts/Teams/teams-alerts_linux.cna)| Linux | Teams | Teams CNA file for Linux CS Client |
 
 ## Acknowledgement
 
@@ -48,6 +49,7 @@ These aggressor scripts were inspired by [@bluescreenofjeff](https://twitter.com
     - [Linux Parser for Slack](#linux-parser-for-slack)
     - [Windows Parser for Slack](#windows-parser-for-slack)
     - [Linux Parser for Discord](#linux-parser-for-discord)
+    - [Linux Parser for Teams]()
   - [Example CNA Output](#example-cna-output)
   - [References](#references)
 
@@ -131,6 +133,16 @@ To run the linux parser, you should use the following usage:
 Example:
 
 ![Discord-Linux-Parser](/Pictures/Discord-Linux-Parser.png)
+
+### Linux Parser for Teams
+
+The Linux parser for Teams uses two mandatory arguments:
+
+- hostname
+- webhook
+
+To run the linux parser, you should use the following usage:
+
 
 ## Example CNA Output
 
